@@ -186,7 +186,7 @@ ditafsirkan oleh shell.
 - Aplikasi ini tidak menyentuh `/boot`, jadi tidak ada pembersihan kernel lama.
 - Belum ada paket AUR untuk proyek ini.
 
-Next - dijadikan tools utility (adding managments app universal, cek, restore configurasi, dsb) untuk arch. agar pengguna tidak perlu instal dari sumber2 yang berbeda atau mengandalkan app dari DE lain.
+# Next - dijadikan tools utility (adding managments app universal, cek, restore configurasi, dsb) untuk arch. agar pengguna tidak perlu instal dari sumber2 yang berbeda atau mengandalkan app dari DE lain.
 hidup vanila !!
 
 ## Lisensi
