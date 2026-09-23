@@ -2,6 +2,7 @@
 
 Pembersih sistem ber-antarmuka GTK4 untuk **Arch Linux** dan turunannya
 (CachyOS, EndeavourOS, Manjaro, Garuda, dan lain-lain).
+app ini ditujukan ke user haiperlen, yang malass membawa beban app pembersih dari Desktop Environment laen ☝️🤓.
 
 ![Tangkapan layar Zarch Cleaner](docs/screenshot.png)
 
