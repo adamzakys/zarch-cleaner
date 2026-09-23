@@ -1,7 +1,7 @@
 # Zarch Cleaner
 
 Pembersih sistem ber-antarmuka GTK4 untuk **Arch Linux** dan turunannya
-(CachyOS, EndeavourOS, Manjaro, Garuda, dan lain-lain).
+(CachyOS, EndeavourOS, Manjaro, Garuda, dll).
 app ini ditujukan ke user haiperlen, yang malass membawa beban app pembersih dari Desktop Environment laen ☝️🤓.
 
 ![Tangkapan layar Zarch Cleaner](docs/screenshot.png)
@@ -10,7 +10,7 @@ Zarch Cleaner memindai sistem, **mengukur** berapa ruang yang bisa dibebaskan
 setiap item, lalu membiarkan kamu memilih apa yang benar-benar dihapus. Tidak ada
 penghapusan otomatis, dan dry-run aktif secara default.
 
-Dibangun dengan Python 3 + PyGObject (GTK4 + libadwaita). **Tanpa dependensi pip.**
+Dibangun dengan Python 3 + PyGObject (GTK4 + libadwaita). **Tanpa dependensi pip** sehingga aman ringan tidak membebani atau bahkan jalan latar belakanx.
 
 ## Instalasi
 
@@ -185,6 +185,9 @@ ditafsirkan oleh shell.
   ditandai tidak tersedia.
 - Aplikasi ini tidak menyentuh `/boot`, jadi tidak ada pembersihan kernel lama.
 - Belum ada paket AUR untuk proyek ini.
+
+Next - dijadikan tools utility (adding managments app universal, cek, restore configurasi, dsb) untuk arch. agar pengguna tidak perlu instal dari sumber2 yang berbeda atau mengandalkan app dari DE lain.
+hidup vanila !!
 
 ## Lisensi
 
