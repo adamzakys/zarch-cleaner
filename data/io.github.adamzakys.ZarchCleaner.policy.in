@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE policyconfig PUBLIC
+ "-//freedesktop//DTD PolicyKit Policy Configuration 1.0//EN"
+ "http://www.freedesktop.org/standards/PolicyKit/1/policyconfig.dtd">
+
+<!--
+  Opsional. Tanpa berkas ini pkexec tetap bekerja dengan benar: polkit memakai
+  kebijakan bawaannya (auth_admin + auth_admin_keep) dan menampilkan dialog
+  autentikasi standar. Memasang berkas ini hanya membuat teks dialognya lebih
+  spesifik.
+
+  PENTING: aksi di bawah cocok hanya jika pkexec menjalankan helper secara
+  langsung sebagai program (yaitu path di bawah sama dengan program yang
+  dieksekusi). Aplikasi ini menjalankan `pkexec <python> <helper.py>`, sehingga
+  pada banyak sistem aksi ini tidak akan cocok dan dialog standar yang muncul.
+  Itu tidak berbahaya dan tidak mengubah hak akses apa pun.
+
+  Pasang dengan: make install-polkit   (butuh hak akses root)
+-->
+<policyconfig>
+  <vendor>Zarch Cleaner</vendor>
+
+  <action id="io.github.adamzakys.ZarchCleaner.clean">
+    <description>Bersihkan cache paket dan sampah sistem</description>
+    <message>Autentikasi diperlukan untuk membersihkan berkas milik sistem</message>
+    <defaults>
+      <allow_any>auth_admin</allow_any>
+      <allow_inactive>auth_admin</allow_inactive>
+      <allow_active>auth_admin_keep</allow_active>
+    </defaults>
+    <annotate key="org.freedesktop.policykit.exec.path">@HELPER@</annotate>
+    <annotate key="org.freedesktop.policykit.exec.allow_gui">true</annotate>
+  </action>
+</policyconfig>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop-application">
+  <id>io.github.adamzakys.ZarchCleaner</id>
+  <metadata_license>MIT</metadata_license>
+  <project_license>MIT</project_license>
+  <name>Zarch Cleaner</name>
+  <summary>Bersihkan cache paket pacman dan sampah sistem di Arch Linux</summary>
+
+  <description>
+    <p>
+      Zarch Cleaner memindai sistem, mengukur berapa ruang yang bisa dibebaskan
+      setiap item, lalu membiarkan kamu memilih apa yang benar-benar dihapus.
+    </p>
+    <p>Yang dicakup:</p>
+    <ul>
+      <li>Cache paket pacman, paket orphan, dan build cache AUR (yay, paru)</li>
+      <li>Log systemd journal, berkas sementara lama, thumbnail, dan trash</li>
+      <li>Cache browser, shader GPU, dan indeks aplikasi desktop</li>
+      <li>Cache tooling pengembangan seperti npm, pip, dan Prisma</li>
+    </ul>
+    <p>
+      Mode dry-run aktif secara default: tidak ada yang dihapus sampai kamu
+      mematikannya dan mengonfirmasi. Setiap target penghapusan harus berada di
+      dalam allowlist yang ditulis di dalam kode (zarchcleaner/safety.py), dan
+      aksi yang butuh root dijalankan lewat pkexec dengan meminta autentikasi.
+    </p>
+  </description>
+
+  <launchable type="desktop-id">io.github.adamzakys.ZarchCleaner.desktop</launchable>
+  <provides>
+    <binary>zarch-cleaner</binary>
+  </provides>
+
+  <categories>
+    <category>System</category>
+    <category>PackageManager</category>
+  </categories>
+
+  <content_rating type="oars-1.1"/>
+
+  <releases>
+    <release version="0.1.0" date="2026-09-23">
+      <description>
+        <p>Rilis pertama.</p>
+      </description>
+    </release>
+  </releases>
+
+  <developer id="io.github.adamzakys">
+    <name>adamzakys</name>
+  </developer>
+
+  <url type="homepage">https://github.com/adamzakys/zarch-cleaner</url>
+  <url type="bugtracker">https://github.com/adamzakys/zarch-cleaner/issues</url>
+</component>

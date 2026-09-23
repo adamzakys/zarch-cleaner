@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1a9ee0"/>
+      <stop offset="0.55" stop-color="#1793d1"/>
+      <stop offset="1" stop-color="#0a5d91"/>
+    </linearGradient>
+    <linearGradient id="peak" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#dcefff"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="4" y="4" width="120" height="120" rx="28" fill="url(#bg)"/>
+
+  <!-- Arch-inspired angular peak: a mountain with a valley cut out of it. -->
+  <path d="M64 20 L108 104 L86 104 L64 62 L42 104 L20 104 Z" fill="url(#peak)"/>
+
+  <!-- A small sparkle, for the cleaning half of the name. -->
+  <path d="M99 18 L102 26 L110 29 L102 32 L99 40 L96 32 L88 29 L96 26 Z"
+        fill="#ffffff" opacity="0.92"/>
+</svg>

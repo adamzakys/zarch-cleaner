@@ -1,0 +1,12 @@
+#!/bin/sh
+# Launcher for Zarch Cleaner. Installed to ~/.local/bin/zarch-cleaner.
+set -eu
+
+APP_DIR="${XDG_DATA_HOME:-$HOME/.local/share}/zarch-cleaner"
+
+if [ ! -d "$APP_DIR/zarchcleaner" ]; then
+    # Running from a source checkout instead of an installed copy.
+    APP_DIR="$(CDPATH= cd -- "$(dirname -- "$0")/.." && pwd)"
+fi
+
+exec env PYTHONPATH="$APP_DIR${PYTHONPATH:+:$PYTHONPATH}" python3 -m zarchcleaner "$@"

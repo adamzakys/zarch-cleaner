@@ -1,0 +1,13 @@
+[Desktop Entry]
+Type=Application
+Version=1.0
+Name=Zarch Cleaner
+GenericName=Pembersih sistem Arch
+Comment=Bersihkan cache paket pacman, sampah sistem, dan cache aplikasi di Arch Linux
+Exec=@EXEC@
+Icon=io.github.adamzakys.ZarchCleaner
+Terminal=false
+Categories=System;PackageManager;
+Keywords=clean;cleaner;cache;pacman;disk;space;junk;pembersih;sampah;arch;
+StartupNotify=true
+StartupWMClass=io.github.adamzakys.ZarchCleaner
